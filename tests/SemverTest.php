@@ -90,6 +90,8 @@ class SemverTest extends TestCase
 		$this->assertTrue($version1->compare('2.0.3-dev'));
 
 		$this->assertFalse($version1->compare('2.0.3-dev.1'));
+
+		$this->assertTrue(Semver::compare($version1, '2.0.3-dev+exp.sha.5114f85'));
 	}
 
 

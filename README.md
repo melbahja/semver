@@ -5,7 +5,7 @@ Simple PHP Semantic Versioning Parser and Comparator
 
 Using Composer: 
 ```bash
-composer require melbahja/semver ^1.0.0
+composer require melbahja/semver 1.0.1
 ```
 
 ## Usage :

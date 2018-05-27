@@ -1,4 +1,4 @@
-# Semver
+# Semver [![Build Status](https://img.shields.io/travis/melbahja/semver/master.svg)](https://travis-ci.org/melbahja/semver)
 Simple PHP Semantic Versioning Parser and Comparator
 
 ## Installation :

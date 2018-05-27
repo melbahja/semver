@@ -1,5 +1,7 @@
 <?php
 
+namespace Melbahja\Semver\Tests;
+
 use PHPUnit\Framework\TestCase;
 use Melbahja\Semver\{
 	Semver,
@@ -79,6 +81,8 @@ class SemverTest extends TestCase
 		$this->assertInstanceOf(get_class($version1), $version2);
 
 		$this->assertFalse(Semver::compare($version2, $version1));
+
+		$this->assertFalse(Semver::compare('2.0.3-dev+exp.sha.5114f85', '2.0.3-alpha'));
 
 		$this->assertTrue(Semver::compare($version1, $version2, '<'));
 
